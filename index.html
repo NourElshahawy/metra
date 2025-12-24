@@ -22,37 +22,51 @@
 <body>
 
     <div class="layout">
+        <div class="hamburger-menu">
+            <input id="checkbox" type="checkbox">
+            <label class="toggle" for="checkbox">
+                <div id="bar1" class="bars"></div>
+                <div id="bar2" class="bars"></div>
+                <div id="bar3" class="bars"></div>
+            </label>
+        </div>
         <!-- Sidebar -->
         <aside class="sidebar">
             <!-- LOGO -->
             <div class="sidebar-logo">
                 <img src="./assets/images/aside/logo.svg" loading="lazy" alt="Logo">
             </div>
-        
+
             <!-- NAV -->
             <div class="sidebar-nav">
                 <div class="nav-bg">
                     <a class="nav-item active" data-label="Home">
                         <img src="./assets/images/aside/home-hashtag.png" loading="lazy" alt="">
+                        <div class="line-active"></div>
                     </a>
                     <a class="nav-item" data-label="Finance">
                         <img src="./assets/images/aside/dollar-square.png" loading="lazy" alt="">
+                        <div class="line-active"></div>
                     </a>
                     <a class="nav-item" data-label="Team Incentives">
                         <img src="./assets/images/aside/user-square.png" loading="lazy" alt="">
+                        <div class="line-active"></div>
                     </a>
                     <a class="nav-item" data-label="Hala Enablement">
                         <img src="./assets/images/aside/user-square (1).png" alt="">
+                        <div class="line-active"></div>
                     </a>
                     <a class="nav-item" data-label="Royal Circle">
                         <img src="./assets/images/aside/favorite-chart.png" alt="">
+                        <div class="line-active"></div>
                     </a>
                     <a class="nav-item" data-label="Profile">
                         <img src="./assets/images/aside/user-square (2).png" alt="">
+                        <div class="line-active"></div>
                     </a>
                 </div>
             </div>
-        
+
             <!-- LOGOUT -->
             <div class="sidebar-logout">
                 <img src="./assets/images/aside/logout.svg" loading="lazy" alt="Logout">
@@ -60,7 +74,7 @@
         </aside>
         <!-- Sidebar -->
 
-        <div class="content">
+        <div class="content" id="dark">
             <!-- header -->
             <header class="dashboard-header">
                 <!-- Left -->
@@ -71,7 +85,7 @@
 
                 <!-- Right -->
                 <div class="header-right">
-                    <button class="icon-btn" aria-label="Notifications">
+                    <button class="icon-btn" aria-label="Notifications" id="darkToggle">
                         <img src="./assets/images/header/headphone.svg" loading="lazy">
                     </button>
 
@@ -96,34 +110,20 @@
                             <div class="overview-slider">
                                 <div class="slider-track">
                                     <article class="slide active">
-                                        <img src="./assets/images/dashboard-section/text-logo-slider.png" loading="lazy"
-                                            alt="Logo" class="slide-logo">
-                                        <p class="slide-text">Compete with partners across all tiers.Check the live
-                                            ranking and push for a guaranteed seat among the top 40.</p>
+                                        <img src="./assets/images/dashboard-section/Ads.png" loading="lazy" alt="Logo"
+                                            class="slide-logo">
                                     </article>
-
                                     <article class="slide">
-                                        <img src="./assets/images/dashboard-section/text-logo-slider.png" loading="lazy"
-                                            alt="Logo" class="slide-logo">
-                                        <p class="slide-text">Compete with partners across all tiers.Check the live
-                                            ranking and push for a guaranteed seat among
-                                            the top 40.</p>
+                                        <img src="./assets/images/dashboard-section/Ads.png" loading="lazy" alt="Logo"
+                                            class="slide-logo">
                                     </article>
-
                                     <article class="slide">
-                                        <img src="./assets/images/dashboard-section/text-logo-slider.png" loading="lazy"
-                                            alt="Logo" class="slide-logo">
-                                        <p class="slide-text">Compete with partners across all tiers.Check the live
-                                            ranking and push for a guaranteed seat among
-                                            the top 40.</p>
+                                        <img src="./assets/images/dashboard-section/Ads.png" loading="lazy" alt="Logo"
+                                            class="slide-logo">
                                     </article>
-
                                     <article class="slide">
-                                        <img src="./assets/images/dashboard-section/text-logo-slider.png" loading="lazy"
-                                            alt="Logo" class="slide-logo">
-                                        <p class="slide-text">Compete with partners across all tiers.Check the live
-                                            ranking and push for a guaranteed seat among
-                                            the top 40.</p>
+                                        <img src="./assets/images/dashboard-section/Ads.png" loading="lazy" alt="Logo"
+                                            class="slide-logo">
                                     </article>
 
                                 </div>
@@ -482,6 +482,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
     <!-- main.js -->
     <script src="main.js"></script>
+    <script src="test.js"></script>
 
 </body>
 

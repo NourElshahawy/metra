@@ -129,7 +129,6 @@ gsap.from(".card-box", {
   stagger: 0.2,
   ease: "power3.out",
 });
-console.log(performanceChart);
 // animation charts
 if (performanceChart && performanceChart.options) {
   performanceChart.options.animation = {
@@ -142,3 +141,42 @@ if (performanceChart && performanceChart.options) {
 
 
 // preformance -chart end
+
+const toggle = document.getElementById("darkToggle");
+
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
+
+//
+
+// نجيب كل عناصر nav-item
+const navItems = document.querySelectorAll('.nav-item');
+
+navItems.forEach(item => {
+  item.addEventListener('click', () => {
+    // نشيل active من كل العناصر
+    navItems.forEach(i => i.classList.remove('active'));
+    
+    // نضيف active على العنصر اللي دوس عليه
+    item.classList.add('active');
+  });
+});
+
+// hamburger menu
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".toggle");
+  const sidebar = document.querySelector(".sidebar");
+
+  hamburger.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+    if (sidebar.classList.contains("active")) {
+      hamburger.style.marginLeft = "65%";
+      hamburger.style.marginTop = "15px";
+    } else {
+      hamburger.style.marginLeft = "0px"; 
+      hamburger.style.marginTop = "0px"; 
+    }
+  });
+});
+
